@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    body {
+        background-color: rgb(230, 214, 245);
+    }
+ 
+    button{
+        background-color: blueviolet;
+        width: 150px;
+        height: 35px;
+        cursor: pointer;
+        outline: none;
+        border-bottom: none;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    
+    .titulo{
+        font-size: 20px;
+        display: flex;
+        color: rgb(30, 5, 53);
+        font-family: 'roboto', sans-serif;
+    
+    }
+
+    .tudo {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .conteiner{
+        display: flex;
+          flex-direction: column;
+          width: 400px;
+          height: 700px;
+          align-items: center;
+          justify-content: space-evenly;
+          border-radius: 20px;
+          box-shadow: 0 0 10px black;
+    
+    }
+   
+    .input{
+        display: flex;
+        width: 200px;
+        height: 50px;
+        justify-content: space-between;
+        align-items: center;
+           
+    }
+    
+    .input input{
+        width: 150px;
+        height: 30px;
+        border-radius: 5px;
+        border: none;
+        outline: 0;
+        text-align: center;
+        justify-content: space-between;
+        transform: translateX(10%);
+        
+        
+        
+    }
+    .input label{
+        font-family: 'roboto', sans-serif;
+    
+    }
+    .result{
+        display: flex;
+          margin-top: 10px;
+          align-items: center;
+          width: 300px;
+          height: 150px;
+          border: 1px solid rgb(57, 14, 97);
+          border-radius: 5px;
+          font: arial 1.5rem serif;
+          background: white;
+          padding: 20px;
+          box-sizing: border-box;
+          user-select: none;
+    
+    }
+    
+</style>
+
+<body>
+    <div class="tudo">
+        <div class="conteiner">
+            <div class="titulo">
+                <h1> Calcule seu IMC<h1>
+            </div>
+            <div class="input">
+                <label>Nome</label>
+                <input type="text" id="nome">
+            </div>
+            <div class="input">
+                <label> Altura </label>
+                <input type="number" id="altura">
+            </div>
+            <div class="input">
+                <label> Peso </label>
+                <input type="number" id="peso">
+            </div>
+            
+            
+            <button id="calcular"> Calcular </button>
+            <div class="result" id="resultado"> </div>
+            
+
+        </div>
+    </div>
+    <script src="./imc.js"></script>
+
+</body>
+
+</html>
